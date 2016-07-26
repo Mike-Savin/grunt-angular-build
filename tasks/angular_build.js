@@ -2,7 +2,7 @@
 
 module.exports = function (grunt) {
 
-  grunt.registerMultiTask('build', '', function () {
+  grunt.registerMultiTask('angular_build', '', function () {
     var source = this.data.source;
     var destination = this.data.destination;
     var appName = this.data.appName;
