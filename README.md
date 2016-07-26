@@ -58,13 +58,13 @@ module.exports = function (grunt) {
 ```
 
 ### Project structure
-In the root of your app source folder you need to add the app.js file like this:
+In the root of your app source folder you need to add the `app.js` file like this:
 
 ```js
 angular.module('myApp', [/* list of used modules */]);
 ```
 
-You can also add bootstrap.js file:
+You can also add `bootstrap.js` file:
 
 ```js
 angular.element(document).ready(function () {
@@ -83,10 +83,9 @@ Next, you have the following list of permitted folder names to get the MVC-like 
 * runs
 * services
 
-(model and service are just other names than factory, but it's the same)
+All listed folders are able to place appropriate Angular files in it (`model` and `service` are just other names for `factory`).
 
-Files in listed directories should look like this:
-
+Files in folders should look like this:
 
 ```js
 var <controller/directive/etc name> = function (/* list of dependencies, e.g. $scope */) {
