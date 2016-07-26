@@ -53,8 +53,10 @@ module.exports = function (grunt) {
         //define component
         if (['configs', 'runs'].indexOf(dir) > -1) {
           contents.push(appName + '.' + module + '([' + args + name + ']);');
-        } else {
+        } else if (dir === 'services') {
           contents.push(appName + '.' + module + "('" + name + "', [" + args + name + "]);");
+        } else {
+          contents.push(appName + '.' + module + "('" + name + "', " + name + ");");
         }
       });
     });
