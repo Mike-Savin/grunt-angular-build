@@ -59,8 +59,12 @@ module.exports = function (grunt) {
       });
     });
 
-    //process bootstrap.js last
-    contents.push(grunt.template.process(grunt.file.read(source + '/js/bootstrap.js'), {data: {appName: appName}}));
+    //process bootstrap.js last if it exists
+    if (grunt.file.exists(source + '/js/bootstrap.js')) {
+      contents.push(grunt.template.process(grunt.file.read(source + '/js/bootstrap.js'), {
+        data: {appName: appName}
+      }));
+    }
 
     //write the result to distribution dir
     var destinationFile = destination + '/js/app.js';
