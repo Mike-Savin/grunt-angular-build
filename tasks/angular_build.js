@@ -14,7 +14,7 @@ module.exports = function (grunt) {
     var contents = [], content, name, args, module, modelOrService;
 
     //scripts concatenation order
-    var dirsOrder = ['configs', 'constants', 'runs', 'models', 'services', 'directives', 'filters', 'controllers'];
+    var dirsOrder = ['constants', 'configs', 'runs', 'models', 'services', 'directives', 'filters', 'controllers'];
 
     //var strip_comments = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
     var functionName = /var ([a-zA-Z_]+)/;
