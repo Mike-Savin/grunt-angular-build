@@ -1,6 +1,6 @@
 {
   "name": "angular-grunt-build",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Grunt plugin that allows to write code using modular structure without including dependency names.",
   "main": "index.js",
   "scripts": {
