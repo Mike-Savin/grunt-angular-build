@@ -26,7 +26,7 @@ Next, add a section named `build` to the data object passed into `grunt.initConf
 
 ```js
 grunt.initConfig({
-  build: {
+  angular_build: {
     your_target: {
       source: 'source directory of a project, e.g. app or <%= app.src %>',
       destination: 'directory where result will be generated',
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     app: appConfig,
-    build: {
+    angular_build: {
       dist: {
         appName: 'myApp',
         source: 'app',
@@ -53,7 +53,7 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', ['build:dist']);
+  grunt.registerTask('default', ['angular_build:dist']);
 };
 ```
 
