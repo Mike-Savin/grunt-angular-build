@@ -22,7 +22,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile:
 grunt.loadNpmTasks('angular-grunt-build');
 ```
 
-Next, add a section named `build` to the data object passed into `grunt.initConfig()`.
+Next, add a section named `angular_build` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
